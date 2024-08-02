@@ -48,12 +48,7 @@ console.log(generateSentence)
 //   censorVowels('javascript');
 //   => 'j*v*scr*pt'
 function censorVowels(string) {
- if (string.includes(`a`, `e`, `i`, `o`, `u`)) {
-  
- }
-
-return 
-
+ 
 }
 
 // Return the given string in sticky case.
