@@ -48,14 +48,21 @@ console.log(generateSentence)
 //   censorVowels('javascript');
 //   => 'j*v*scr*pt'
 function censorVowels(string) {
- 
+  const asterixVowels = /[aeiouAEIOU]/g
+  return string.replace(asterixVowels, `*`)
 }
+console.log(censorVowels)
+//I still don't understand how the /g tag works. I just looked up replace on https://www.w3schools.com/jsref/jsref_string_replaceall.asp
 
 // Return the given string in sticky case.
 // Ex.:
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
-function stickyCase(string) {}
+function stickyCase(string) {
+  for (let i = 0; i < string.length; i + 2) {
+    return string.upperCase
+}
+console.log(stickyCase)
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
