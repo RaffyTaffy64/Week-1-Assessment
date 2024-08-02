@@ -39,19 +39,22 @@ function fullName(firstName, lastName) {
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
 function generateSentence(person, beverage, location) {
-
-  const person = `Kay` 
-  const beverage = `coffee` 
-  const location = `the local coffee shop`
-
- return (`${person} was drinking ${beverage} at ${location}`)
+  return (person + ` was drinking ` + beverage + ` at ` + location + `.`)
 }
+console.log(generateSentence)
 
 // Return the given string with all vowels replced with '*' characters.
 // Ex.:
 //   censorVowels('javascript');
 //   => 'j*v*scr*pt'
-function censorVowels(string) {}
+function censorVowels(string) {
+ if (string.includes(`a`, `e`, `i`, `o`, `u`)) {
+  
+ }
+
+return 
+
+}
 
 // Return the given string in sticky case.
 // Ex.:

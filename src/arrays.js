@@ -3,8 +3,9 @@
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
 function greaterThanTen(numbers) {
-  let newArr = []
-  for (let i = 0; i > numbers[]; i++)
+  for (let i = 0; i > numbers.length; i++) {
+    return numbers > 10
+  }
 }
 
 
