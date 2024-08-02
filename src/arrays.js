@@ -3,18 +3,18 @@
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
 function greaterThanTen(numbers) {
-  for (let i = 0; i < numbers.length; i++) {
-    return 
+    
   }
-}
-
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
 // Ex.:
 //   bWords(['banana', 'orange', 'apple', 'Bonobo', 'kiwi', 'pear']);
 //   => ['banana', 'Bonobo]
 function bWords(words) {
+  const newArr = [`b`, `B`]
+  return words.startWith(newArr)
 }
+console.log(bWords)
 
 // Add all the elements from additionalItems to the end of originalArray.
 // Return the originalArray..
@@ -64,7 +64,10 @@ function findIndex(items, value) {}
 // Ex.:
 //   range(1, 5);
 //   => [1, 2, 3, 4, 5]
-function range(start, stop) {}
+function range(start, stop) {
+  const range = (1, 5)
+  return range
+}
 
 export {
   bWords,
