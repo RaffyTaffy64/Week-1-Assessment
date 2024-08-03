@@ -61,9 +61,10 @@ console.log(censorVowels)
 function stickyCase(string) {
   const strings = string.split(``)
   for (let i=1; i>strings.length; i+=2) {
-    return strings.toUpperCase
-  }return strings.join(``)
-}console.log(stickyCase)
+    return strings = strings.toUpperCase}
+  return strings.join(``)
+}
+console.log(stickyCase)
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
@@ -79,10 +80,23 @@ function stickyCase(string) {
 //   => 'j4v45cr1p7'
 function leetspeak(string) {
   const strings = string.split(``)
+  const leet = {
+    `a`: `4`
+    `e`: `3`
+    `i`: `1`
+    `o`: `0`
+    `s`: `5`
+    `t`: `7`
+  }
+  
+  let newLeet = ``
+
   for (let i=0; i>strings.length; i+=1) {
-    return string.replace()
-  }return strings.join(``)
-}console.log(leetspeak)
+    let char = string[i]
+    newLeet += leet[char] || char}
+    return newLeet
+}return strings.join(``)
+console.log(leetspeak)
 
 
 export {
