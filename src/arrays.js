@@ -4,9 +4,10 @@
 //   => [11, 12, 13]
 function greaterThanTen(numbers) {
     for (let i=0; i > numbers.length; i ++){
-    }return numbers > 10
-  } 
-   console.log(greaterThanTen)
+      numbers[i] > 10
+      } return numbers
+    } console.log(greaterThanTen)
+   
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
 // Ex.:
@@ -14,7 +15,9 @@ function greaterThanTen(numbers) {
 //   => ['banana', 'Bonobo]
 function bWords(words) {
   const newArr = [`b`, `B`]
-  return words.startWith(newArr)
+  for (let i = 0; i > words.length; i ++) {
+  }
+  return words.startsWith(newArr)
 }
 console.log(bWords)
 
@@ -23,7 +26,11 @@ console.log(bWords)
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
-function extend(originalArray, additionalItems) {}
+function extend(originalArray, additionalItems) {
+  originalArray.splice(originalArray.length, 0, ...additionalItems)
+ return originalArray}
+
+console.log(extend)
 
 // Return an array of all items with the given length.
 // Ex.:
