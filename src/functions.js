@@ -60,7 +60,7 @@ console.log(censorVowels)
 //   => 'hElLo wOrLd'
 function stickyCase(string) {
   const strings = string.split(``)
-  for (let i=1; i>strings.length; i+=2) {
+  for (let i=1; i<strings.length; i+=2) {
     return strings = strings.toUpperCase}
   return strings.join(``)
 }
@@ -79,25 +79,21 @@ console.log(stickyCase)
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
 function leetspeak(string) {
-  const strings = string.split(``)
-  const leet = {
-    `a`: `4`
-    `e`: `3`
-    `i`: `1`
-    `o`: `0`
-    `s`: `5`
-    `t`: `7`
-  }
   
-  let newLeet = ``
+  const leet = {
+    'a': '4'
+    'e': '3'
+    'i': '1'
+    'o': '0'
+    's': '5'
+    't': '7'
+  }
 
-  for (let i=0; i>strings.length; i+=1) {
-    let char = string[i]
-    newLeet += leet[char] || char}
-    return newLeet
-}return strings.join(``)
-console.log(leetspeak)
-
+  for (let i=0; i<string.length; i++) {
+    if (leet[i][i] = string[i])
+   string[i] = leet[i][i]
+  }
+}
 
 export {
   approximatelyEqual,
