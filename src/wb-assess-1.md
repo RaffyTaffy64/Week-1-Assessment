@@ -45,9 +45,9 @@ const result = 1 < 100 || 'hello' === 'hi';
 console.log(result);
 ```
 
-- [ ] **A.** `true`
+- [x] **A.** `true`
 - [ ] **B.** `false`
-- [x] **C.** `undefined`
+- [ ] **C.** `undefined`
 - [ ] **D.** N/A because the code has an error
 
 ### A.4. What's the output?
@@ -88,8 +88,8 @@ cherry
 ```
 
 - [ ] **A.** `const fruit in fruits`
-- [ ] **B.** `const fruit of fruits`
-- [x] **C.** `let fruit = 0; fruit < fruits.length; fruit++`
+- [x] **B.** `const fruit of fruits`
+- [ ] **C.** `let fruit = 0; fruit < fruits.length; fruit++`
 - [ ] **D.** None of the above
 
 ### A.6. What will happen?
@@ -103,10 +103,10 @@ function makeWordArray(phrase) {
 }
 ```
 
-- [x] **A.** Nothing happens because the program errors out.
+- [ ] **A.** Nothing happens because the program errors out.
 - [ ] **B.** It defines a function called `makeWordArray` and converts `phrase` into an array of words.
 - [ ] **C.** It defines a function called `makeWordArray` and outputs a word array.
-- [ ] **D.** It defines a function called `makeWordArray` but nothing else happens.
+- [x] **D.** It defines a function called `makeWordArray` but nothing else happens.
 
 ### A.7. Identify the error
 
@@ -177,8 +177,8 @@ console.log(numStrings);
 // ['500', '200', '440']
 ```
 
-- [x] **A.** The code causes an error because `numStrings` needs to be a `let` variable.
-- [ ] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
+- [ ] **A.** The code causes an error because `numStrings` needs to be a `let` variable.
+- [x] **B.** The code causes an error because `i <= nums.length` should be `i < nums.length`
 - [ ] **C.** The code causes an error because `i++` isn't valid JavaScript syntax.
 - [ ] **D.** There is no error; the code generates the expected output.
 
@@ -206,11 +206,11 @@ outputArgs('hi', 'bye');
 
 - [ ] **A.** The code causes an error because `outputArgs` takes in three arguments but it's being
   called with just two.
-- [x] **B.** The code causes an error because it will output `hi`, `bye`, and `undefined` instead
+- [ ] **B.** The code causes an error because it will output `hi`, `bye`, and `undefined` instead
   of the expected output.
 - [ ] **C.** The code causes an error because the `a`, `b`, and `c` variables haven't been
   initialized.
-- [ ] **D.** There is no error; the code generates the expected output.
+- [x] **D.** There is no error; the code generates the expected output.
 
 ## B. Free response
 
