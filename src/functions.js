@@ -59,10 +59,11 @@ console.log(censorVowels)
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
 function stickyCase(string) {
-  const strings = string.split(``)
-  for (let i=1; i<strings.length; i+=2) {
-    return strings = strings.toUpperCase}
-  return strings.join(``)
+  const characters = string.split(``)
+  for (let i = 1; i < characters.length; i += 2) {
+    characters[i] = characters[i].toUpperCase()
+     }
+  return characters.join(``)
 }
 console.log(stickyCase)
 
@@ -81,18 +82,23 @@ console.log(stickyCase)
 function leetspeak(string) {
   
   const leet = {
-    'a': '4'
-    'e': '3'
-    'i': '1'
-    'o': '0'
-    's': '5'
+    'a': '4',
+    'e': '3',
+    'i': '1',
+    'o': '0',
+    's': '5',
     't': '7'
   }
-
+let result = ''
   for (let i=0; i<string.length; i++) {
-    if (leet[i][i] = string[i])
-   string[i] = leet[i][i]
+    let char = string[i]
+    if (leet[char]) {
+      result += leet[char] 
+      } else { 
+          result += char
+      }
   }
+  return result
 }
 
 export {
